@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/**header**/
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+    background-color: #E9E9E9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 7rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #cc3366;
+}
+
+/* HERO */
+.hero-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /*margin-top: 70px;*/
+}
+
+/*About us*/
+.about{
+    background-color: #E9E9E9;
+}
+
+.about h1{
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    padding: 5rem 0 2rem 15rem;
+}
+
+.about-image {
+    position: relative;
+    left: 25rem;
+    display: inline-block;
+    border-radius: 1rem;
+    clip-path: polygon(
+        0 0, 
+        100% 0%, 
+        100% 83%, 
+        75% 83%, 
+        75% 100%, 
+        0 100%
+    );
+    /*overflow: hidden;*/
+    
+}
+
+.about-image img {
+    display: block;
+    width: 566px;
+    height: 400px;
+    border-radius: 1rem;
+}
+
+.hello-label {
+    position: absolute;
+    top: 70rem;
+    bottom: 0rem;
+    right: 24.5rem;
+    
+    color: #000;
+    padding: 0.8rem 1.2rem;
+    font-size: 2.3rem;
+    font-family: 'Georgia', serif;
+    
+}
+
+.about-note {
+    max-width: 900px;
+    margin: 0rem auto;
+    padding: 2rem 0 5rem 0;
+    font-size: 1.5rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    color: #000;
+    text-align: center;
+}
+
+/*services*/
+.service {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.service h2{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    padding: 5rem 0 2rem 15rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 3rem 5rem 3rem;
+}
+
+.services-container h3{
+    text-align: center;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin: 1rem 0 0 0;
+}
+
+.services-container p{
+    text-align: center;
+    width: 10rem; 
+    padding: 2rem 0 3rem 0;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.service-text{
+    justify-items: center;
+}
+
+.service-one > img, .service-three > img {
+    width: 324px;
+    height: 451px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-two > img {
+    width: 487px;
+    height: 451px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*portfolio*/
+.portfolio {
+    background-color: #E9E9E9;
+}
+
+.portfolio h2{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    padding: 5rem 0 2rem 15rem;
+}
+
+.poster-one img{
+    width: 60vw;
+    height: auto;
+    padding: 2rem 0 4rem 0;
+}
+
+.poster-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-two img{
+    width: 60vw;
+    height: auto;
+    padding: 2rem 0 4rem 0;
+}
+
+.poster-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-three img{
+    width: 40vw;
+    height: auto;
+    padding: 2rem 0 4rem 0;
+}
+
+.poster-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-four img{
+    width: 60vw;
+    height: auto;
+    padding: 2rem 0 4rem 0;
+}
+
+.poster-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACT */
+.contact {
+    padding: 0rem 2rem 4rem 2rem;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.contact h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    padding: 5rem 0 2rem 15rem;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.form-container {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-info img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #cc3366;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #aa2a55;
+}
+
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile Nav Styles */
+@media screen and (max-width: 768px) {
+
+  /* HEADER */
+.header-bar {
+    flex-direction: row;
+    padding: 0 1rem;
+    height: 4rem;
+}
+
+.logo img {
+    height: 2.5rem;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 2rem;
+}
+
+.nav-bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: #fff;
+    padding: 1rem;
+    z-index: 999;
+}
+
+.nav-bar.active {
+    display: flex;
+}
+
+.nav-bar ul {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+  /* HERO IMAGE */
+.hero-section img {
+    height: auto;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+  /* ABOUT SECTION */
+.about h1 {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+}
+
+.about-image {
+    position: static;
+    margin: 0 1rem;
+    width: 90%;
+    clip-path: none;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hello-label {
+    position: static;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about-note {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+  /* SERVICES */
+.service h2 {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem 3rem;
+}
+
+    .service-one > img,
+    .service-two > img,
+    .service-three > img {
+        width: 100%;
+        height: auto;
+}
+
+.services-container p {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+  /* PORTFOLIO */
+.portfolio h2 {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+    .poster-one img,
+    .poster-two img,
+    .poster-three img,
+    .poster-four img {
+        width: 90vw;
+        padding: 1rem 0;
+}
+
+  /* CONTACT SECTION */
+.contact h2 {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact-container {
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.contact-info {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+  /* FOOTER */
+footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+footer .social-icons {
+    justify-content: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
